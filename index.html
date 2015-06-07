@@ -48,8 +48,8 @@
 <a id="acccess-token" class="anchor" href="#access-token" aria-hidden="true"><span class="octicon octicon-link"></span></a>Your acces token</h3>
 
 <p>Your access token:</p>
-<span id='token'></span>
-<p><br>Please enter this by going to your profile and clicking 'question closed notifer access-token' at the top :)</p>
+<pre id='token'></pre>
+<p>Please enter this by going to your profile and clicking 'question closed notifer access-token' at the top :)</p>
 <script> if(window.location.href.split('=').length != 1) {
   document.getElementById('access-token').style.display = 'inline-block';
   document.getElementById("token").innerHTML = window.location.href.split('=')[1].split('&')[0]
