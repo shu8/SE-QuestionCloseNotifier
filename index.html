@@ -36,12 +36,26 @@
 </li>
 </ol>
 
+<div style='display:none' id='access-token'>
 <h3>
 <a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h3>
 
 <p>This script does everything for you. When it notices a question has been closed, it will add a message to your SE inbox (client-side, that is!). Everything will work as a normal message does - the red count, the blue notification, and the same style. Clicking it will lead to the question that has been closed. You need to click the 'mark as read' button at the top right of the notification to stop it from showing again.</p>
 
 <p>If you want this as a separate web-app, see my previous 'endeavour' over <a href="http://shu8.github.io/SE-Closed-Questions-Notifier/">here</a>. I won't be updating that anymore though! So use this instead :)</p>
+
+<h3>
+<a id="acccess-token" class="anchor" href="#access-token" aria-hidden="true"><span class="octicon octicon-link"></span></a>Your acces token</h3>
+
+<p>Your access token:</p>
+<span id='token'></span>
+<p><br>Please enter this by going to your profile and clicking 'question closed notifer access-token' at the top :)</p>
+<script> if(window.location.href.split('=').length != 1) {
+  document.getElementById('access-token').style.display = 'inline-block';
+  document.getElementById("token").innerHTML = window.location.href.split('=')[1].split('&')[0]
+}</script>
+
+</div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/shu8/SE-QuestionClosedNotifier">Stack Exchange Question Closed Notifier</a> is maintained by <a href="https://github.com/shu8">shu8</a>.</span>
